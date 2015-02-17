@@ -1,0 +1,9 @@
+SpringBatch is usefull for executing series of jobs.
+Each job has many steps.
+Each steps does "READ-PROCESS-WRITE". Each step is called a task (tasklet)
+Job = (step1 => step2 => step3).
+
+In spring, we can specify sequence of steps in an xml file. This information is stored in database, so in case of failure, 
+spring batching will start from where it failed instead of starting from the begining.
+
+
